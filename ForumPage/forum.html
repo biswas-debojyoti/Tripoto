@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum Page</title>
+    <link rel="stylesheet" href="forum.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navbar for Forum Page starts here -->
+
+    <nav>
+        <a href="../detail-page/tripoto.html"><img src="https://cdn1.tripoto.com/assets/2.9/img/logo/header-blue.svg"
+                alt="" id="forum_logo"></a>
+        <div id="forum_searchbar">
+            <input type="text" id="forum_search" placeholder="Search Questions">
+            <button><i class="fa fa-search"></i></button>
+        </div>
+        <div id="forum_filtering">
+            <button>Popular</button>
+            <button>Ladakh</button>
+            <button>Goa</button>
+            <button>Kashmir</button>
+            <button>Pondicherry</button>
+            <button>Kerala</button>
+            <button>September</button>
+        </div>
+    </nav>
+
+    <!-- Navbar for Forum Page ends here -->
+
+    <!-- Main Content of Forum Page Starts Here -->
+
+    <!-- Scrolling Left Side Starts Here -->
+    <div id="forum_scrolling">
+        <!-- For posting comments -->
+        <div id="post_container">
+            <div id="forum_post_head">
+                <img src="data:image/svg+xml,%3csvg width='52px' height='52px' viewBox='0 0 52 52' version='1.1' xmlns='http://www.w3.org/2000/svg'%3e %3cg stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3e %3cg transform='translate(-499.000000%2c -225.000000)'%3e %3cg transform='translate(500.000000%2c 226.000000)'%3e %3crect fill='%232F9BDB' fill-rule='nonzero' x='0' y='0' width='50' height='50' rx='25'%3e%3c/rect%3e %3cpath d='M33.9381708%2c27.6317991 C33.5259761%2c34.4771336 30.6406133%2c35.0273996 30.5027754%2c34.9990285 C30.3932965%2c34.9719771 29.1567125%2c35.1639764 26.7659833%2c31.4526504 C24.5401321%2c27.9887462 20.4735842%2c28.1807454 18.9072444%2c28.153694 C17.7530993%2c28.1266425 15.4718491%2c28.1266425 14.0987461%2c28.153694 C13.4946336%2c28.153694 13%2c27.6588505 13%2c27.0544817 L13%2c22.9578376 C13%2c22.3534688 13.4946336%2c21.8586254 14.0987461%2c21.8586254 C15.4731681%2c21.8586254 17.7814583%2c21.8856768 18.9356034%2c21.8586254 C20.5019432%2c21.8315739 24.59685%2c22.0235732 26.7943423%2c18.559669 C29.1580315%2c14.848343 30.3662566%2c15.0403423 30.4770545%2c15.0132908 C30.6406133%2c14.9037655 33.5259761%2c15.316135 33.9381708%2c22.2980464 C34.0206097%2c23.6176289 34.0206097%2c26.2851651 33.9381708%2c27.6317991 Z M30.7230523%2c16.8006654 C31.9596363%2c16.8006654 33.0029835%2c20.402466 33.0029835%2c24.8560572 C33.0029835%2c29.3096483 32.0137163%2c32.9385004 30.7500923%2c32.9385004 C29.733785%2c32.9385004 28.8539967%2c30.546757 28.5796399%2c27.274852 C29.3215904%2c26.8083796 29.789184%2c25.9552694 29.789184%2c25.021005 C29.789184%2c24.0583695 29.2945504%2c23.2336304 28.5526%2c22.7387869 C28.7999168%2c19.3303052 29.6783861%2c16.8006654 30.7230523%2c16.8006654 Z M16.6800741%2c30.5738084 C16.5435552%2c30.0235425 16.9273909%2c29.5016476 17.4490645%2c29.5016476 L19.0708033%2c29.5016476 C19.5937959%2c29.5016476 19.9776316%2c29.9410686 19.9505916%2c30.435912 L19.8951926%2c31.2335997 C19.8681527%2c31.7013917 20.0871105%2c32.1408127 20.4722652%2c32.3882344 L21.0222978%2c32.7438619 C21.4061335%2c32.9912837 21.6264103%2c33.4320242 21.6264103%2c33.8714452 L21.6264103%2c33.9268677 C21.6264103%2c34.5041851 21.1588166%2c34.9719771 20.5817441%2c34.9719771 L18.7680875%2c34.9719771 C18.3288528%2c34.9719771 17.9166582%2c34.6691329 17.7788203%2c34.2297119 L16.6800741%2c30.5738084 Z' fill='white'%3e%3c/path%3e %3c/g%3e %3c/g%3e %3c/g%3e %3c/svg%3e"
+                    alt="horn">
+                <div>
+                    <p>Travel Forum</p>
+                    <p>Get answers & discussion from real Tripoto travelers</p>
+                </div>
+            </div>
+            <input style="font-family:Arial, Helvetica, sans-serif ; color:black ; font-size: 25px ; " type="textarea "
+                rows="1" cols="20" id="post_text" placeholder="Post Your Question !" resize=none>
+            <button id="forum_post_button">Post</button>
+        </div>
+        <div id="textFromPost">
+
+        </div>
+        <!-- Actual Posts -->
+        <!-- One -->
+        <div id="one">
+            <div id="nagtibbatrek">
+                <div id="image_head">
+                    <img id="image_head_one"
+                        src="https://cdn1.tripoto.com/media/filter/mss/img/2179239/UserPhoto/1657769772_1657769770971.jpg"
+                        alt="P1">
+                    <p>Nag Tibba Trek Official</p>
+                </div>
+                <div id="blog_details">
+                    <p>Today 7:24pm</p>
+                    <p> . 1 Response</p>
+                </div>
+            </div>
+            <p id="one_desc">Do you want to go for trekking with your children and family in Uttarakhand?Nag Tibba trek
+                is the easiest
+                trek that can be ever done by children.</p>
+            <div id="forum_icon">
+                <div id="edit_icon">
+                    <div id="ans">
+                        <img src="data:image/svg+xml,%3csvg width='13px' height='15px' viewBox='0 0 13 15' version='1.1' xmlns='http://www.w3.org/2000/svg'%3e %3cg stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3e %3cg transform='translate(-245.000000%2c -251.000000)' fill-rule='nonzero' stroke='%232F9BDB' stroke-width='1.5'%3e %3cg transform='translate(244.043750%2c 252.000000)'%3e %3cg%3e %3cpath d='M5.5831202%2c0.75 C5.44504902%2c0.75 5.3331202%2c0.861928813 5.3331202%2c1 L5.3331202%2c11.7995299 C5.3331202%2c11.8598816 5.35495219%2c11.9181962 5.39458632%2c11.9637096 L6.68614643%2c13.4468578 C6.69369496%2c13.4555261 6.70183233%2c13.4636634 6.7105006%2c13.471212 C6.81462499%2c13.5618859 6.97254024%2c13.5509822 7.06321419%2c13.4468578 L8.35477429%2c11.9637096 C8.39440842%2c11.9181962 8.41624041%2c11.8598816 8.41624041%2c11.7995299 L8.41624041%2c1 C8.41624041%2c0.861928813 8.3043116%2c0.75 8.16624041%2c0.75 L5.5831202%2c0.75 Z' transform='translate(6.874680%2c 7.115125) rotate(-315.000000) translate(-6.874680%2c -7.115125) '%3e%3c/path%3e %3cpath d='M1.71867008%2c5.38502518 L1.71867008%2c1.60869565 C1.71867008%2c1.0564109 2.16638533%2c0.608695652 2.71867008%2c0.608695652 L5.97261042%2c0.608695652'%3e%3c/path%3e %3cpath d='M8.59335038%2c12.689373 L8.59335038%2c8.91304348 C8.59335038%2c8.36075873 9.04106563%2c7.91304348 9.59335038%2c7.91304348 L12.8472907%2c7.91304348' transform='translate(10.720321%2c 10.301208) scale(-1%2c -1) translate(-10.720321%2c -10.301208) '%3e%3c/path%3e %3c/g%3e %3c/g%3e %3c/g%3e %3c/g%3e %3c/svg%3e"
+                            alt="">
+                        <p>Answer</p>
+                    </div>
+                    <div id="wish">
+                        <img src="data:image/svg+xml,%3csvg width='17px' height='16px' viewBox='0 0 17 16' version='1.1' xmlns='http://www.w3.org/2000/svg' %3e %3cg stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3e %3cg transform='translate(-277.000000%2c -251.000000)' fill-rule='nonzero' stroke='%232F9BDB' stroke-width='1.5'%3e %3cg transform='translate(278.000000%2c 252.000000)'%3e %3cpath d='M7.13290717%2c13.3077688 C7.01933231%2c13.3077688 6.88953246%2c13.2590938 6.80840756%2c13.1779689 L2.00581325%2c8.63497429 C1.16211425%2c7.83995023 0.545564979%2c6.88267637 0.237290344%2c5.86050258 C-0.427933868%2c3.63768021 0.431990113%2c2.128757 1.25946413%2c1.23638306 C1.97336329%2c0.490033942 2.94686213%2c0.0519594613 3.92036098%2c0.003284519 C5.47795913%2c-0.0616154041 6.54880787%2c0.846983519 7.13290717%2c1.69068252 C7.66833154%2c0.944333404 8.67428035%2c-0.0616154041 10.3779033%2c0.003284519 C11.3514022%2c0.0519594613 12.324901%2c0.490033942 13.0388002%2c1.23638306 C13.8824992%2c2.11253202 14.7261982%2c3.63768021 14.060974%2c5.86050258 C13.7526993%2c6.88267637 13.152375%2c7.85617521 12.308676%2c8.63497429 L7.45740679%2c13.1779689 C7.3600569%2c13.2590938 7.24648204%2c13.3077688 7.13290717%2c13.3077688 Z'%3e%3c/path%3e %3c/g%3e %3c/g%3e %3c/g%3e %3c/svg%3e"
+                            alt="">
+                        <p>Wishlist</p>
+                    </div>
+                </div>
+                <div id="logo_icon">
+                    <div><i class="fa-brands fa-facebook-square"></i></div>
+                    <div><i class="fa-brands fa-twitter"></i></div>
+                    <div><i class="fa fa-link" aria-hidden="true"></i></div>
+                    <div><i class="fas fa-ellipsis-h"></i></div>
+                </div>
+            </div>
+            <div id="comment">
+                <div id="commenter">
+                    <img id="commenter_pic"
+                        src="https://cdn1.tripoto.com/media/filter/mss/img/1609956/UserPhoto/1649832384_1649832381930.jpg"
+                        alt="">
+                    <p>Dr Yadwinder Singh</p>
+                </div>
+                <div id="follow_commenter"><button>Follow</button></div>
+            </div>
+            <p id="commented">Wow..Will visit one day</p>
+        </div>
+        <hr id="first">
+        <!-- Two -->
+        <div id="two">
+            <div id="nagtibbatrek">
+                <div id="image_head">
+                    <img id="image_head_one"
+                        src="https://static2.tripoto.com/media/filter/tst/img/311219/TripDocument/1624442336_def_prof.jpg"
+                        alt="P1">
+                    <p>Luke</p>
+                </div>
+                <div id="blog_details">
+                    <p>Jul 18, 2022</p>
+                    <p> . 1 Response</p>
+                </div>
+            </div>
+            <p id="one_desc">How is the weather in Thailand late September and early October?Is it raining heavily or
+                has the monsoon retreated ?</p>
+            <div id="forum_icon">
+                <div id="edit_icon">
+                    <div id="ans">
+                        <img src="data:image/svg+xml,%3csvg width='13px' height='15px' viewBox='0 0 13 15' version='1.1' xmlns='http://www.w3.org/2000/svg'%3e %3cg stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3e %3cg transform='translate(-245.000000%2c -251.000000)' fill-rule='nonzero' stroke='%232F9BDB' stroke-width='1.5'%3e %3cg transform='translate(244.043750%2c 252.000000)'%3e %3cg%3e %3cpath d='M5.5831202%2c0.75 C5.44504902%2c0.75 5.3331202%2c0.861928813 5.3331202%2c1 L5.3331202%2c11.7995299 C5.3331202%2c11.8598816 5.35495219%2c11.9181962 5.39458632%2c11.9637096 L6.68614643%2c13.4468578 C6.69369496%2c13.4555261 6.70183233%2c13.4636634 6.7105006%2c13.471212 C6.81462499%2c13.5618859 6.97254024%2c13.5509822 7.06321419%2c13.4468578 L8.35477429%2c11.9637096 C8.39440842%2c11.9181962 8.41624041%2c11.8598816 8.41624041%2c11.7995299 L8.41624041%2c1 C8.41624041%2c0.861928813 8.3043116%2c0.75 8.16624041%2c0.75 L5.5831202%2c0.75 Z' transform='translate(6.874680%2c 7.115125) rotate(-315.000000) translate(-6.874680%2c -7.115125) '%3e%3c/path%3e %3cpath d='M1.71867008%2c5.38502518 L1.71867008%2c1.60869565 C1.71867008%2c1.0564109 2.16638533%2c0.608695652 2.71867008%2c0.608695652 L5.97261042%2c0.608695652'%3e%3c/path%3e %3cpath d='M8.59335038%2c12.689373 L8.59335038%2c8.91304348 C8.59335038%2c8.36075873 9.04106563%2c7.91304348 9.59335038%2c7.91304348 L12.8472907%2c7.91304348' transform='translate(10.720321%2c 10.301208) scale(-1%2c -1) translate(-10.720321%2c -10.301208) '%3e%3c/path%3e %3c/g%3e %3c/g%3e %3c/g%3e %3c/g%3e %3c/svg%3e"
+                            alt="">
+                        <p>Answer</p>
+                    </div>
+                    <div id="wish">
+                        <img src="data:image/svg+xml,%3csvg width='17px' height='16px' viewBox='0 0 17 16' version='1.1' xmlns='http://www.w3.org/2000/svg' %3e %3cg stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3e %3cg transform='translate(-277.000000%2c -251.000000)' fill-rule='nonzero' stroke='%232F9BDB' stroke-width='1.5'%3e %3cg transform='translate(278.000000%2c 252.000000)'%3e %3cpath d='M7.13290717%2c13.3077688 C7.01933231%2c13.3077688 6.88953246%2c13.2590938 6.80840756%2c13.1779689 L2.00581325%2c8.63497429 C1.16211425%2c7.83995023 0.545564979%2c6.88267637 0.237290344%2c5.86050258 C-0.427933868%2c3.63768021 0.431990113%2c2.128757 1.25946413%2c1.23638306 C1.97336329%2c0.490033942 2.94686213%2c0.0519594613 3.92036098%2c0.003284519 C5.47795913%2c-0.0616154041 6.54880787%2c0.846983519 7.13290717%2c1.69068252 C7.66833154%2c0.944333404 8.67428035%2c-0.0616154041 10.3779033%2c0.003284519 C11.3514022%2c0.0519594613 12.324901%2c0.490033942 13.0388002%2c1.23638306 C13.8824992%2c2.11253202 14.7261982%2c3.63768021 14.060974%2c5.86050258 C13.7526993%2c6.88267637 13.152375%2c7.85617521 12.308676%2c8.63497429 L7.45740679%2c13.1779689 C7.3600569%2c13.2590938 7.24648204%2c13.3077688 7.13290717%2c13.3077688 Z'%3e%3c/path%3e %3c/g%3e %3c/g%3e %3c/g%3e %3c/svg%3e"
+                            alt="">
+                        <p>Wishlist</p>
+                    </div>
+                </div>
+                <div id="logo_icon">
+                    <div><i class="fa-brands fa-facebook-square"></i></div>
+                    <div><i class="fa-brands fa-twitter"></i></div>
+                    <div><i class="fa fa-link" aria-hidden="true"></i></div>
+                    <div><i class="fas fa-ellipsis-h"></i></div>
+                </div>
+            </div>
+            <div id="comment">
+                <div id="commenter">
+                    <img id="commenter_pic"
+                        src="https://cdn1.tripoto.com/media/filter/mss/img/109540/UserPhoto/1656231468_82af710a_526f_4390_8dcb_cd4d3b01fa61.jpeg"
+                        alt="">
+                    <p>Radhika Narasimhan</p>
+                </div>
+                <div id="follow_commenter"><button>Follow</button></div>
+            </div>
+            <p id="commented">Monsoon will be over in October..so you can plan Thailand in October.</p>
+        </div>
+        <hr id="first">
+        <!-- Three -->
+        <div id="three">
+            <div id="nagtibbatrek">
+                <div id="image_head">
+                    <img id="image_head_one"
+                        src="https://cdn1.tripoto.com/media/filter/mss/img/1382080/UserPhoto/1656478327_1656478322569.jpg"
+                        alt="P1">
+                    <p>Pankaj Mehta Traveller</p>
+                </div>
+                <div id="blog_details">
+                    <p>Jan 2 2022 11:33am</p>
+                    <p> . 1 Response</p>
+                </div>
+            </div>
+            <p id="one_desc">Places to visit near Mumbai?</p>
+            <div id="forum_icon">
+                <div id="edit_icon">
+                    <div id="ans">
+                        <img src="data:image/svg+xml,%3csvg width='13px' height='15px' viewBox='0 0 13 15' version='1.1' xmlns='http://www.w3.org/2000/svg'%3e %3cg stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3e %3cg transform='translate(-245.000000%2c -251.000000)' fill-rule='nonzero' stroke='%232F9BDB' stroke-width='1.5'%3e %3cg transform='translate(244.043750%2c 252.000000)'%3e %3cg%3e %3cpath d='M5.5831202%2c0.75 C5.44504902%2c0.75 5.3331202%2c0.861928813 5.3331202%2c1 L5.3331202%2c11.7995299 C5.3331202%2c11.8598816 5.35495219%2c11.9181962 5.39458632%2c11.9637096 L6.68614643%2c13.4468578 C6.69369496%2c13.4555261 6.70183233%2c13.4636634 6.7105006%2c13.471212 C6.81462499%2c13.5618859 6.97254024%2c13.5509822 7.06321419%2c13.4468578 L8.35477429%2c11.9637096 C8.39440842%2c11.9181962 8.41624041%2c11.8598816 8.41624041%2c11.7995299 L8.41624041%2c1 C8.41624041%2c0.861928813 8.3043116%2c0.75 8.16624041%2c0.75 L5.5831202%2c0.75 Z' transform='translate(6.874680%2c 7.115125) rotate(-315.000000) translate(-6.874680%2c -7.115125) '%3e%3c/path%3e %3cpath d='M1.71867008%2c5.38502518 L1.71867008%2c1.60869565 C1.71867008%2c1.0564109 2.16638533%2c0.608695652 2.71867008%2c0.608695652 L5.97261042%2c0.608695652'%3e%3c/path%3e %3cpath d='M8.59335038%2c12.689373 L8.59335038%2c8.91304348 C8.59335038%2c8.36075873 9.04106563%2c7.91304348 9.59335038%2c7.91304348 L12.8472907%2c7.91304348' transform='translate(10.720321%2c 10.301208) scale(-1%2c -1) translate(-10.720321%2c -10.301208) '%3e%3c/path%3e %3c/g%3e %3c/g%3e %3c/g%3e %3c/g%3e %3c/svg%3e"
+                            alt="">
+                        <p>Answer</p>
+                    </div>
+                    <div id="wish">
+                        <img src="data:image/svg+xml,%3csvg width='17px' height='16px' viewBox='0 0 17 16' version='1.1' xmlns='http://www.w3.org/2000/svg' %3e %3cg stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3e %3cg transform='translate(-277.000000%2c -251.000000)' fill-rule='nonzero' stroke='%232F9BDB' stroke-width='1.5'%3e %3cg transform='translate(278.000000%2c 252.000000)'%3e %3cpath d='M7.13290717%2c13.3077688 C7.01933231%2c13.3077688 6.88953246%2c13.2590938 6.80840756%2c13.1779689 L2.00581325%2c8.63497429 C1.16211425%2c7.83995023 0.545564979%2c6.88267637 0.237290344%2c5.86050258 C-0.427933868%2c3.63768021 0.431990113%2c2.128757 1.25946413%2c1.23638306 C1.97336329%2c0.490033942 2.94686213%2c0.0519594613 3.92036098%2c0.003284519 C5.47795913%2c-0.0616154041 6.54880787%2c0.846983519 7.13290717%2c1.69068252 C7.66833154%2c0.944333404 8.67428035%2c-0.0616154041 10.3779033%2c0.003284519 C11.3514022%2c0.0519594613 12.324901%2c0.490033942 13.0388002%2c1.23638306 C13.8824992%2c2.11253202 14.7261982%2c3.63768021 14.060974%2c5.86050258 C13.7526993%2c6.88267637 13.152375%2c7.85617521 12.308676%2c8.63497429 L7.45740679%2c13.1779689 C7.3600569%2c13.2590938 7.24648204%2c13.3077688 7.13290717%2c13.3077688 Z'%3e%3c/path%3e %3c/g%3e %3c/g%3e %3c/g%3e %3c/svg%3e"
+                            alt="">
+                        <p>Wishlist</p>
+                    </div>
+                </div>
+                <div id="logo_icon">
+                    <div><i class="fa-brands fa-facebook-square"></i></div>
+                    <div><i class="fa-brands fa-twitter"></i></div>
+                    <div><i class="fa fa-link" aria-hidden="true"></i></div>
+                    <div><i class="fas fa-ellipsis-h"></i></div>
+                </div>
+            </div>
+            <div id="comment">
+                <div id="commenter">
+                    <img id="commenter_pic"
+                        src="https://cdn1.tripoto.com/media/filter/mss/img/2261558/UserPhoto/1658216687_1658216687129.jpg"
+                        alt="">
+                    <p>Mahima Singh Rajput</p>
+                </div>
+                <div id="follow_commenter"><button>Follow</button></div>
+            </div>
+            <p id="commented">Aksha Beach , Alibagh, Matheran , Shirdi , Lonavala, Lavasa</p>
+        </div>
+        <hr id="first">
+        <!-- Four -->
+        <div id="four">
+            <div id="nagtibbatrek">
+                <div id="image_head">
+                    <img id="image_head_one"
+                        src="https://cdn1.tripoto.com/media/filter/mss/img/2178235/UserPhoto/1635580122_1635580118984.jpg"
+                        alt="P1">
+                    <p>Manoj</p>
+                </div>
+                <div id="blog_details">
+                    <p>Dec 24 2021 3:15pm</p>
+                    <p> . 1 Response</p>
+                </div>
+            </div>
+            <p id="one_desc">Where is Chirapunji located and why is it so famous?</p>
+            <div id="forum_icon">
+                <div id="edit_icon">
+                    <div id="ans">
+                        <img src="data:image/svg+xml,%3csvg width='13px' height='15px' viewBox='0 0 13 15' version='1.1' xmlns='http://www.w3.org/2000/svg'%3e %3cg stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3e %3cg transform='translate(-245.000000%2c -251.000000)' fill-rule='nonzero' stroke='%232F9BDB' stroke-width='1.5'%3e %3cg transform='translate(244.043750%2c 252.000000)'%3e %3cg%3e %3cpath d='M5.5831202%2c0.75 C5.44504902%2c0.75 5.3331202%2c0.861928813 5.3331202%2c1 L5.3331202%2c11.7995299 C5.3331202%2c11.8598816 5.35495219%2c11.9181962 5.39458632%2c11.9637096 L6.68614643%2c13.4468578 C6.69369496%2c13.4555261 6.70183233%2c13.4636634 6.7105006%2c13.471212 C6.81462499%2c13.5618859 6.97254024%2c13.5509822 7.06321419%2c13.4468578 L8.35477429%2c11.9637096 C8.39440842%2c11.9181962 8.41624041%2c11.8598816 8.41624041%2c11.7995299 L8.41624041%2c1 C8.41624041%2c0.861928813 8.3043116%2c0.75 8.16624041%2c0.75 L5.5831202%2c0.75 Z' transform='translate(6.874680%2c 7.115125) rotate(-315.000000) translate(-6.874680%2c -7.115125) '%3e%3c/path%3e %3cpath d='M1.71867008%2c5.38502518 L1.71867008%2c1.60869565 C1.71867008%2c1.0564109 2.16638533%2c0.608695652 2.71867008%2c0.608695652 L5.97261042%2c0.608695652'%3e%3c/path%3e %3cpath d='M8.59335038%2c12.689373 L8.59335038%2c8.91304348 C8.59335038%2c8.36075873 9.04106563%2c7.91304348 9.59335038%2c7.91304348 L12.8472907%2c7.91304348' transform='translate(10.720321%2c 10.301208) scale(-1%2c -1) translate(-10.720321%2c -10.301208) '%3e%3c/path%3e %3c/g%3e %3c/g%3e %3c/g%3e %3c/g%3e %3c/svg%3e"
+                            alt="">
+                        <p>Answer</p>
+                    </div>
+                    <div id="wish">
+                        <img src="data:image/svg+xml,%3csvg width='17px' height='16px' viewBox='0 0 17 16' version='1.1' xmlns='http://www.w3.org/2000/svg' %3e %3cg stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3e %3cg transform='translate(-277.000000%2c -251.000000)' fill-rule='nonzero' stroke='%232F9BDB' stroke-width='1.5'%3e %3cg transform='translate(278.000000%2c 252.000000)'%3e %3cpath d='M7.13290717%2c13.3077688 C7.01933231%2c13.3077688 6.88953246%2c13.2590938 6.80840756%2c13.1779689 L2.00581325%2c8.63497429 C1.16211425%2c7.83995023 0.545564979%2c6.88267637 0.237290344%2c5.86050258 C-0.427933868%2c3.63768021 0.431990113%2c2.128757 1.25946413%2c1.23638306 C1.97336329%2c0.490033942 2.94686213%2c0.0519594613 3.92036098%2c0.003284519 C5.47795913%2c-0.0616154041 6.54880787%2c0.846983519 7.13290717%2c1.69068252 C7.66833154%2c0.944333404 8.67428035%2c-0.0616154041 10.3779033%2c0.003284519 C11.3514022%2c0.0519594613 12.324901%2c0.490033942 13.0388002%2c1.23638306 C13.8824992%2c2.11253202 14.7261982%2c3.63768021 14.060974%2c5.86050258 C13.7526993%2c6.88267637 13.152375%2c7.85617521 12.308676%2c8.63497429 L7.45740679%2c13.1779689 C7.3600569%2c13.2590938 7.24648204%2c13.3077688 7.13290717%2c13.3077688 Z'%3e%3c/path%3e %3c/g%3e %3c/g%3e %3c/g%3e %3c/svg%3e"
+                            alt="">
+                        <p>Wishlist</p>
+                    </div>
+                </div>
+                <div id="logo_icon">
+                    <div><i class="fa-brands fa-facebook-square"></i></div>
+                    <div><i class="fa-brands fa-twitter"></i></div>
+                    <div><i class="fa fa-link" aria-hidden="true"></i></div>
+                    <div><i class="fas fa-ellipsis-h"></i></div>
+                </div>
+            </div>
+            <div id="comment">
+                <div id="commenter">
+                    <img id="commenter_pic"
+                        src="https://cdn1.tripoto.com/media/filter/mss/img/1609956/UserPhoto/1649832384_1649832381930.jpg"
+                        alt="">
+                    <p>Dr Yadwinder Singh</p>
+                </div>
+                <div id="follow_commenter"><button>Follow</button></div>
+            </div>
+            <p id="commented">It is located in Meghalaya , called as highest rainfall spot in India and is famous for
+                Living Root Bridge, Trekking ,Sohra Pulao.</p>
+        </div>
+        <hr id="first">
+        <!-- Five -->
+        <div id="five">
+            <div id="nagtibbatrek">
+                <div id="image_head">
+                    <img id="image_head_one"
+                        src="https://cdn1.tripoto.com/media/filter/mss/img/1476801/UserPhoto/1650710270_1650710269205.jpg"
+                        alt="P1">
+                    <p>Upanshu Kaushal</p>
+                </div>
+                <div id="blog_details">
+                    <p>Aug 1, 2022</p>
+                    <p> . 1 Response</p>
+                </div>
+            </div>
+            <p id="one_desc">Which hotel is best to stay in Dharamshala, Himachal Pradesh ?</p>
+            <div id="forum_icon">
+                <div id="edit_icon">
+                    <div id="ans">
+                        <img src="data:image/svg+xml,%3csvg width='13px' height='15px' viewBox='0 0 13 15' version='1.1' xmlns='http://www.w3.org/2000/svg'%3e %3cg stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3e %3cg transform='translate(-245.000000%2c -251.000000)' fill-rule='nonzero' stroke='%232F9BDB' stroke-width='1.5'%3e %3cg transform='translate(244.043750%2c 252.000000)'%3e %3cg%3e %3cpath d='M5.5831202%2c0.75 C5.44504902%2c0.75 5.3331202%2c0.861928813 5.3331202%2c1 L5.3331202%2c11.7995299 C5.3331202%2c11.8598816 5.35495219%2c11.9181962 5.39458632%2c11.9637096 L6.68614643%2c13.4468578 C6.69369496%2c13.4555261 6.70183233%2c13.4636634 6.7105006%2c13.471212 C6.81462499%2c13.5618859 6.97254024%2c13.5509822 7.06321419%2c13.4468578 L8.35477429%2c11.9637096 C8.39440842%2c11.9181962 8.41624041%2c11.8598816 8.41624041%2c11.7995299 L8.41624041%2c1 C8.41624041%2c0.861928813 8.3043116%2c0.75 8.16624041%2c0.75 L5.5831202%2c0.75 Z' transform='translate(6.874680%2c 7.115125) rotate(-315.000000) translate(-6.874680%2c -7.115125) '%3e%3c/path%3e %3cpath d='M1.71867008%2c5.38502518 L1.71867008%2c1.60869565 C1.71867008%2c1.0564109 2.16638533%2c0.608695652 2.71867008%2c0.608695652 L5.97261042%2c0.608695652'%3e%3c/path%3e %3cpath d='M8.59335038%2c12.689373 L8.59335038%2c8.91304348 C8.59335038%2c8.36075873 9.04106563%2c7.91304348 9.59335038%2c7.91304348 L12.8472907%2c7.91304348' transform='translate(10.720321%2c 10.301208) scale(-1%2c -1) translate(-10.720321%2c -10.301208) '%3e%3c/path%3e %3c/g%3e %3c/g%3e %3c/g%3e %3c/g%3e %3c/svg%3e"
+                            alt="">
+                        <p>Answer</p>
+                    </div>
+                    <div id="wish">
+                        <img src="data:image/svg+xml,%3csvg width='17px' height='16px' viewBox='0 0 17 16' version='1.1' xmlns='http://www.w3.org/2000/svg' %3e %3cg stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3e %3cg transform='translate(-277.000000%2c -251.000000)' fill-rule='nonzero' stroke='%232F9BDB' stroke-width='1.5'%3e %3cg transform='translate(278.000000%2c 252.000000)'%3e %3cpath d='M7.13290717%2c13.3077688 C7.01933231%2c13.3077688 6.88953246%2c13.2590938 6.80840756%2c13.1779689 L2.00581325%2c8.63497429 C1.16211425%2c7.83995023 0.545564979%2c6.88267637 0.237290344%2c5.86050258 C-0.427933868%2c3.63768021 0.431990113%2c2.128757 1.25946413%2c1.23638306 C1.97336329%2c0.490033942 2.94686213%2c0.0519594613 3.92036098%2c0.003284519 C5.47795913%2c-0.0616154041 6.54880787%2c0.846983519 7.13290717%2c1.69068252 C7.66833154%2c0.944333404 8.67428035%2c-0.0616154041 10.3779033%2c0.003284519 C11.3514022%2c0.0519594613 12.324901%2c0.490033942 13.0388002%2c1.23638306 C13.8824992%2c2.11253202 14.7261982%2c3.63768021 14.060974%2c5.86050258 C13.7526993%2c6.88267637 13.152375%2c7.85617521 12.308676%2c8.63497429 L7.45740679%2c13.1779689 C7.3600569%2c13.2590938 7.24648204%2c13.3077688 7.13290717%2c13.3077688 Z'%3e%3c/path%3e %3c/g%3e %3c/g%3e %3c/g%3e %3c/svg%3e"
+                            alt="">
+                        <p>Wishlist</p>
+                    </div>
+                </div>
+                <div id="logo_icon">
+                    <div><i class="fa-brands fa-facebook-square"></i></div>
+                    <div><i class="fa-brands fa-twitter"></i></div>
+                    <div><i class="fa fa-link" aria-hidden="true"></i></div>
+                    <div><i class="fas fa-ellipsis-h"></i></div>
+                </div>
+            </div>
+            <div id="comment">
+                <div id="commenter">
+                    <img id="commenter_pic"
+                        src="https://cdn1.tripoto.com/media/filter/mss/img/2261558/UserPhoto/1658216687_1658216687129.jpg"
+                        alt="">
+                    <p>Mahima Singh Rajput</p>
+                </div>
+                <div id="follow_commenter"><button>Follow</button></div>
+            </div>
+            <p id="commented">Kindly check MMT, Airbnb and Yatra.</p>
+        </div>
+        <hr id="first">
+        <!-- Six -->
+        <div id="six">
+            <div id="nagtibbatrek">
+                <div id="image_head">
+                    <img id="image_head_one"
+                        src="https://cdn1.tripoto.com/media/filter/mss/img/2216822/UserPhoto/1655575648_1655575644655.jpg"
+                        alt="P1">
+                    <p>Happy Mornings</p>
+                </div>
+                <div id="blog_details">
+                    <p>July 14 2022 3:24pm</p>
+                    <p> . 1 Response</p>
+                </div>
+            </div>
+            <p id="one_desc">Which is the best route to enter Nepal to go to Kathmandu for a roadtrip with awesome views
+                and road?</p>.</p>
+            <div id="forum_icon">
+                <div id="edit_icon">
+                    <div id="ans">
+                        <img src="data:image/svg+xml,%3csvg width='13px' height='15px' viewBox='0 0 13 15' version='1.1' xmlns='http://www.w3.org/2000/svg'%3e %3cg stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3e %3cg transform='translate(-245.000000%2c -251.000000)' fill-rule='nonzero' stroke='%232F9BDB' stroke-width='1.5'%3e %3cg transform='translate(244.043750%2c 252.000000)'%3e %3cg%3e %3cpath d='M5.5831202%2c0.75 C5.44504902%2c0.75 5.3331202%2c0.861928813 5.3331202%2c1 L5.3331202%2c11.7995299 C5.3331202%2c11.8598816 5.35495219%2c11.9181962 5.39458632%2c11.9637096 L6.68614643%2c13.4468578 C6.69369496%2c13.4555261 6.70183233%2c13.4636634 6.7105006%2c13.471212 C6.81462499%2c13.5618859 6.97254024%2c13.5509822 7.06321419%2c13.4468578 L8.35477429%2c11.9637096 C8.39440842%2c11.9181962 8.41624041%2c11.8598816 8.41624041%2c11.7995299 L8.41624041%2c1 C8.41624041%2c0.861928813 8.3043116%2c0.75 8.16624041%2c0.75 L5.5831202%2c0.75 Z' transform='translate(6.874680%2c 7.115125) rotate(-315.000000) translate(-6.874680%2c -7.115125) '%3e%3c/path%3e %3cpath d='M1.71867008%2c5.38502518 L1.71867008%2c1.60869565 C1.71867008%2c1.0564109 2.16638533%2c0.608695652 2.71867008%2c0.608695652 L5.97261042%2c0.608695652'%3e%3c/path%3e %3cpath d='M8.59335038%2c12.689373 L8.59335038%2c8.91304348 C8.59335038%2c8.36075873 9.04106563%2c7.91304348 9.59335038%2c7.91304348 L12.8472907%2c7.91304348' transform='translate(10.720321%2c 10.301208) scale(-1%2c -1) translate(-10.720321%2c -10.301208) '%3e%3c/path%3e %3c/g%3e %3c/g%3e %3c/g%3e %3c/g%3e %3c/svg%3e"
+                            alt="">
+                        <p>Answer</p>
+                    </div>
+                    <div id="wish">
+                        <img src="data:image/svg+xml,%3csvg width='17px' height='16px' viewBox='0 0 17 16' version='1.1' xmlns='http://www.w3.org/2000/svg' %3e %3cg stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3e %3cg transform='translate(-277.000000%2c -251.000000)' fill-rule='nonzero' stroke='%232F9BDB' stroke-width='1.5'%3e %3cg transform='translate(278.000000%2c 252.000000)'%3e %3cpath d='M7.13290717%2c13.3077688 C7.01933231%2c13.3077688 6.88953246%2c13.2590938 6.80840756%2c13.1779689 L2.00581325%2c8.63497429 C1.16211425%2c7.83995023 0.545564979%2c6.88267637 0.237290344%2c5.86050258 C-0.427933868%2c3.63768021 0.431990113%2c2.128757 1.25946413%2c1.23638306 C1.97336329%2c0.490033942 2.94686213%2c0.0519594613 3.92036098%2c0.003284519 C5.47795913%2c-0.0616154041 6.54880787%2c0.846983519 7.13290717%2c1.69068252 C7.66833154%2c0.944333404 8.67428035%2c-0.0616154041 10.3779033%2c0.003284519 C11.3514022%2c0.0519594613 12.324901%2c0.490033942 13.0388002%2c1.23638306 C13.8824992%2c2.11253202 14.7261982%2c3.63768021 14.060974%2c5.86050258 C13.7526993%2c6.88267637 13.152375%2c7.85617521 12.308676%2c8.63497429 L7.45740679%2c13.1779689 C7.3600569%2c13.2590938 7.24648204%2c13.3077688 7.13290717%2c13.3077688 Z'%3e%3c/path%3e %3c/g%3e %3c/g%3e %3c/g%3e %3c/svg%3e"
+                            alt="">
+                        <p>Wishlist</p>
+                    </div>
+                </div>
+                <div id="logo_icon">
+                    <div><i class="fa-brands fa-facebook-square"></i></div>
+                    <div><i class="fa-brands fa-twitter"></i></div>
+                    <div><i class="fa fa-link" aria-hidden="true"></i></div>
+                    <div><i class="fas fa-ellipsis-h"></i></div>
+                </div>
+            </div>
+            <div id="comment">
+                <div id="commenter">
+                    <img id="commenter_pic"
+                        src="https://cdn1.tripoto.com/media/filter/mss/img/109540/UserPhoto/1656231468_82af710a_526f_4390_8dcb_cd4d3b01fa61.jpeg"
+                        alt="">
+                    <p>Takeaway Itenaries</p>
+                </div>
+                <div id="follow_commenter"><button>Follow</button></div>
+            </div>
+            <p id="commented">There are lot of routes: via Varanasi, via Gauriphanta, via Sunauli border</p>
+        </div>
+        <hr id="first">
+        <!-- Seven -->
+        <div id="seven">
+            <div id="nagtibbatrek">
+                <div id="image_head">
+                    <img id="image_head_one"
+                        src="https://cdn1.tripoto.com/media/filter/mss/gen/2260826/UserPhoto/1658026933_profilepic"
+                        alt="P1">
+                    <p>Isha Rawat</p>
+                </div>
+                <div id="blog_details">
+                    <p>February 7 2022 1:01 am</p>
+                    <p> . 1 Response</p>
+                </div>
+            </div>
+            <p id="one_desc">What is the ideal time to go to Goa?</p>
+            <div id="forum_icon">
+                <div id="edit_icon">
+                    <div id="ans">
+                        <img src="data:image/svg+xml,%3csvg width='13px' height='15px' viewBox='0 0 13 15' version='1.1' xmlns='http://www.w3.org/2000/svg'%3e %3cg stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3e %3cg transform='translate(-245.000000%2c -251.000000)' fill-rule='nonzero' stroke='%232F9BDB' stroke-width='1.5'%3e %3cg transform='translate(244.043750%2c 252.000000)'%3e %3cg%3e %3cpath d='M5.5831202%2c0.75 C5.44504902%2c0.75 5.3331202%2c0.861928813 5.3331202%2c1 L5.3331202%2c11.7995299 C5.3331202%2c11.8598816 5.35495219%2c11.9181962 5.39458632%2c11.9637096 L6.68614643%2c13.4468578 C6.69369496%2c13.4555261 6.70183233%2c13.4636634 6.7105006%2c13.471212 C6.81462499%2c13.5618859 6.97254024%2c13.5509822 7.06321419%2c13.4468578 L8.35477429%2c11.9637096 C8.39440842%2c11.9181962 8.41624041%2c11.8598816 8.41624041%2c11.7995299 L8.41624041%2c1 C8.41624041%2c0.861928813 8.3043116%2c0.75 8.16624041%2c0.75 L5.5831202%2c0.75 Z' transform='translate(6.874680%2c 7.115125) rotate(-315.000000) translate(-6.874680%2c -7.115125) '%3e%3c/path%3e %3cpath d='M1.71867008%2c5.38502518 L1.71867008%2c1.60869565 C1.71867008%2c1.0564109 2.16638533%2c0.608695652 2.71867008%2c0.608695652 L5.97261042%2c0.608695652'%3e%3c/path%3e %3cpath d='M8.59335038%2c12.689373 L8.59335038%2c8.91304348 C8.59335038%2c8.36075873 9.04106563%2c7.91304348 9.59335038%2c7.91304348 L12.8472907%2c7.91304348' transform='translate(10.720321%2c 10.301208) scale(-1%2c -1) translate(-10.720321%2c -10.301208) '%3e%3c/path%3e %3c/g%3e %3c/g%3e %3c/g%3e %3c/g%3e %3c/svg%3e"
+                            alt="">
+                        <p>Answer</p>
+                    </div>
+                    <div id="wish">
+                        <img src="data:image/svg+xml,%3csvg width='17px' height='16px' viewBox='0 0 17 16' version='1.1' xmlns='http://www.w3.org/2000/svg' %3e %3cg stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3e %3cg transform='translate(-277.000000%2c -251.000000)' fill-rule='nonzero' stroke='%232F9BDB' stroke-width='1.5'%3e %3cg transform='translate(278.000000%2c 252.000000)'%3e %3cpath d='M7.13290717%2c13.3077688 C7.01933231%2c13.3077688 6.88953246%2c13.2590938 6.80840756%2c13.1779689 L2.00581325%2c8.63497429 C1.16211425%2c7.83995023 0.545564979%2c6.88267637 0.237290344%2c5.86050258 C-0.427933868%2c3.63768021 0.431990113%2c2.128757 1.25946413%2c1.23638306 C1.97336329%2c0.490033942 2.94686213%2c0.0519594613 3.92036098%2c0.003284519 C5.47795913%2c-0.0616154041 6.54880787%2c0.846983519 7.13290717%2c1.69068252 C7.66833154%2c0.944333404 8.67428035%2c-0.0616154041 10.3779033%2c0.003284519 C11.3514022%2c0.0519594613 12.324901%2c0.490033942 13.0388002%2c1.23638306 C13.8824992%2c2.11253202 14.7261982%2c3.63768021 14.060974%2c5.86050258 C13.7526993%2c6.88267637 13.152375%2c7.85617521 12.308676%2c8.63497429 L7.45740679%2c13.1779689 C7.3600569%2c13.2590938 7.24648204%2c13.3077688 7.13290717%2c13.3077688 Z'%3e%3c/path%3e %3c/g%3e %3c/g%3e %3c/g%3e %3c/svg%3e"
+                            alt="">
+                        <p>Wishlist</p>
+                    </div>
+                </div>
+                <div id="logo_icon">
+                    <div><i class="fa-brands fa-facebook-square"></i></div>
+                    <div><i class="fa-brands fa-twitter"></i></div>
+                    <div><i class="fa fa-link" aria-hidden="true"></i></div>
+                    <div><i class="fas fa-ellipsis-h"></i></div>
+                </div>
+            </div>
+            <div id="comment">
+                <div id="commenter">
+                    <img id="commenter_pic"
+                        src="https://cdn1.tripoto.com/media/filter/mss/img/2235982/UserPhoto/1657683790_1657683787096.jpg"
+                        alt="">
+                    <p>Pritam Basudev</p>
+                </div>
+                <div id="follow_commenter"><button>Follow</button></div>
+            </div>
+            <p id="commented">After monsoon from September till March.</p>
+        </div>
+        <hr id="first">
+    </div>
+
+    <div id="forum_fixed">
+        <div id="make_image">
+            <p>Related Questions For You</p>
+            <p>Earn Credits when your answers are upvoted by others</p>
+            <img src="data:image/svg+xml,%3csvg width='52px' height='52px' viewBox='0 0 52 52' version='1.1' xmlns='http://www.w3.org/2000/svg'%3e %3cg stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3e %3cg transform='translate(-499.000000%2c -225.000000)'%3e %3cg transform='translate(500.000000%2c 226.000000)'%3e %3crect fill='%232F9BDB' fill-rule='nonzero' x='0' y='0' width='50' height='50' rx='25'%3e%3c/rect%3e %3cpath d='M33.9381708%2c27.6317991 C33.5259761%2c34.4771336 30.6406133%2c35.0273996 30.5027754%2c34.9990285 C30.3932965%2c34.9719771 29.1567125%2c35.1639764 26.7659833%2c31.4526504 C24.5401321%2c27.9887462 20.4735842%2c28.1807454 18.9072444%2c28.153694 C17.7530993%2c28.1266425 15.4718491%2c28.1266425 14.0987461%2c28.153694 C13.4946336%2c28.153694 13%2c27.6588505 13%2c27.0544817 L13%2c22.9578376 C13%2c22.3534688 13.4946336%2c21.8586254 14.0987461%2c21.8586254 C15.4731681%2c21.8586254 17.7814583%2c21.8856768 18.9356034%2c21.8586254 C20.5019432%2c21.8315739 24.59685%2c22.0235732 26.7943423%2c18.559669 C29.1580315%2c14.848343 30.3662566%2c15.0403423 30.4770545%2c15.0132908 C30.6406133%2c14.9037655 33.5259761%2c15.316135 33.9381708%2c22.2980464 C34.0206097%2c23.6176289 34.0206097%2c26.2851651 33.9381708%2c27.6317991 Z M30.7230523%2c16.8006654 C31.9596363%2c16.8006654 33.0029835%2c20.402466 33.0029835%2c24.8560572 C33.0029835%2c29.3096483 32.0137163%2c32.9385004 30.7500923%2c32.9385004 C29.733785%2c32.9385004 28.8539967%2c30.546757 28.5796399%2c27.274852 C29.3215904%2c26.8083796 29.789184%2c25.9552694 29.789184%2c25.021005 C29.789184%2c24.0583695 29.2945504%2c23.2336304 28.5526%2c22.7387869 C28.7999168%2c19.3303052 29.6783861%2c16.8006654 30.7230523%2c16.8006654 Z M16.6800741%2c30.5738084 C16.5435552%2c30.0235425 16.9273909%2c29.5016476 17.4490645%2c29.5016476 L19.0708033%2c29.5016476 C19.5937959%2c29.5016476 19.9776316%2c29.9410686 19.9505916%2c30.435912 L19.8951926%2c31.2335997 C19.8681527%2c31.7013917 20.0871105%2c32.1408127 20.4722652%2c32.3882344 L21.0222978%2c32.7438619 C21.4061335%2c32.9912837 21.6264103%2c33.4320242 21.6264103%2c33.8714452 L21.6264103%2c33.9268677 C21.6264103%2c34.5041851 21.1588166%2c34.9719771 20.5817441%2c34.9719771 L18.7680875%2c34.9719771 C18.3288528%2c34.9719771 17.9166582%2c34.6691329 17.7788203%2c34.2297119 L16.6800741%2c30.5738084 Z' fill='white'%3e%3c/path%3e %3c/g%3e %3c/g%3e %3c/g%3e %3c/svg%3e"
+                alt="">
+        </div>
+        <div id="all_divs">
+
+            <div id="div1">
+                <img id="div1_img"
+                    src="https://cdn1.tripoto.com/media/filter/mss/img/1679857/UserPhoto/1651731519_1651731517009.jpg"
+                    alt="">
+                <p>Vikas 3737</p>
+            </div>
+            <p id="div1_desc">Small trip to Chandigarh 28 feb to 2 march anyone join...</p>
+
+            <div id="div1">
+                <img id="div1_img"
+                    src="https://cdn1.tripoto.com/media/filter/mss/img/1805201/UserPhoto/1574146765_1574146763186.jpg"
+                    alt="">
+                <p>Vikram Naik</p>
+            </div>
+            <p id="div1_desc">Is anyone or a group planning a trip in march end week from hyderabad please suggest me. I
+                would like to join.</p>
+
+            <div id="div1">
+                <img id="div1_img"
+                    src="https://cdn1.tripoto.com/media/filter/mss/img/1954574/UserPhoto/1582336306_1582336302994.jpg"
+                    alt="">
+                <p>Baljinder Singh</p>
+            </div>
+            <p id="div1_desc">We are a team of professional climbers with decades of experinec in technical expeditions,
+                mountain trekking, wildlife, yoga camps. Please feel free tp contact us.</p>
+
+            <div id="div1">
+                <img id="div1_img"
+                    src="https://cdn1.tripoto.com/media/filter/mss/img/1866108/UserPhoto/1582480120_1582480114059.jpg"
+                    alt="">
+                <p>Navneet K Thakur</p>
+            </div>
+            <p id="div1_desc">Hello fellow mates, anyone travelling to Malaysia between March last week to April first
+                week?You can reply in comment or inbox.</p>
+        </div>
+    </div>
+
+    <!-- Main Content of Forum Page Ends Here -->
+
+    <!-- Pagination Starts -->
+    <div id="container">
+        <div id="pagination">
+            <a href="#" class="blocks">
+                << /a>
+                    <a href="#" class="blocks active">1</a>
+                    <a href="#" class="blocks">2</a>
+                    <a href="#" class="blocks">3</a>
+                    <a href="#" class="blocks">4</a>
+                    <a href="#" class="blocks">5</a>
+                    <a href="#" class="blocks">...</a>
+                    <!-- <a href="#" class="blocks">7</a>
+          <a href="#" class="blocks">8</a>
+          <a href="#" class="blocks">9</a> -->
+                    <a href="#" class="blocks">></a>
+        </div>
+    </div>
+    <!-- Pagination Ends -->
+
+    <!-- Footer starts here -->
+    <div id="footer">
+        <hr id="footerhr">
+        <div class="footerFirst">
+            <div id="logo">
+                <img src="https://cdn1.tripoto.com/assets/2.9/img/logo/header-blue.svg" alt="loading">
+                <p>The Global Travel Community</p><br>
+                <hr>
+                <div class="social-icon">
+                    <a href=""><img
+                            src="https://cdn.iconscout.com/icon/free/png-512/facebook-social-media-fb-logo-square-44659.png"
+                            alt="loading"></a>
+                    <a href=""><img
+                            src="https://www.pngfind.com/pngs/m/418-4184531_twitter-icon-black-twitter-black-icon-png-transparent.png"
+                            alt=""></a>
+                    <a href=""><img src="http://assets.stickpng.com/images/5ecec78673e4440004f09e77.png" alt=""></a>
+                    <a href=""><img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZVD9nv8xGslDpmSBaHUvXZO9Hr2sM0w3bX4TDMKiFMcreEhvU6FXOWHrCGR1uV_OU4yY&usqp=CAU"
+                            alt=""></a>
+                    <a href=""><img
+                            src="https://e7.pngegg.com/pngimages/1013/144/png-clipart-font-awesome-computer-icons-font-pinterest-icon-computer-network-text.png"
+                            alt=""></a>
+                    <a href=""><img src="https://image.flaticon.com/icons/png/512/37/37430.png" alt=""></a>
+                </div>
+                <div class="GooglePlaystore">
+                    <img src="https://cdn1.tripoto.com/assets/2.9/img/logo/download-android-app.svg" alt="loading">
+                </div>
+            </div>
+            <div>
+                <p>About Tripoto</p><br>
+                <a href="#">How It Works</a><br><br>
+                <a href="#">FAQ's</a><br><br>
+                <a href="#">Privacy Policy</a><br><br>
+                <a href="#">Terms & Conditions</a><br><br>
+                <a href="#">Careers</a><br><br>
+                <a href="#">Contact Us</a><br><br>
+            </div>
+            <div>
+                <p>Products</p><br>
+                <a href="#">Tour Packages</a><br><br>
+                <a href="#">Travel Guides</a><br><br>
+                <a href="#">Trips & ltineraries</a><br><br>
+                <a href="#">Weekend Getways</a><br><br>
+                <a href="#">Place to Visit</a><br><br>
+                <a href="#">Other Travel Categories</a><br><br>
+                <a href="#">Tripto Fourm</a><br><br>
+                <a href="#">Honeymoon Packages</a><br><br>
+            </div>
+            <div>
+                <p>Important Travel Links</p><br>
+                <a href="#">Goa Tourism</a><br><br>
+                <a href="#">Dubai Tourism</a><br><br>
+                <a href="#">Singapore Tourism</a><br><br>
+                <a href="#">Kerala Tourism</a><br><br>
+                <a href="#">Manali Tourism</a><br><br>
+                <a href="#">Bali Tourism</a><br><br>
+                <a href="#">Sri Lanka Tourism</a><br><br>
+                <a href="#">Honeymoon Destinations inindia</a><br><br>
+            </div>
+            <div>
+                <p>Partner Programs</p><br>
+                <a href="#">Buy Travel Leads</a><br><br>
+                <a href="#">Partner With Us</a><br><br>
+                <a href="#">Earn Credits</a><br><br>
+                <a href="#">Get paid to Travel</a><br><br>
+                <a href="#">Import Blog To ltinerary</a><br><br>
+                <a href="#">Tripto Ai</a><br><br>
+            </div>
+        </div>
+        <div class="footerSecond">
+            <hr id="footerhr">
+            <p>© All rights reserved.</p>
+        </div>
+    </div>
+    <!-- Footer ends here -->
+
+    <script src="forum.js"></script>
+</body>
+
+</html>

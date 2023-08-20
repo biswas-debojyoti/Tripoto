@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/0c430de460.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./finalpay.css">
+    <title>Document</title>
+    <style>
+        #newrazopay {
+            border: 1px solid black;
+            height: 500px;
+            width: 25%;
+            margin: auto;
+        }
+
+        #newrazopay1 {
+            border: 1px solid black;
+            height: 110px;
+            width: 100%;
+            background-color: #6E9FED
+        }
+
+        #newyourtrip {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            color: white;
+            line-height: 20px;
+            font-weight: 700;
+            margin-left: 20px;
+        }
+
+        #newyourtrip1 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            color: white;
+            line-height: 20px;
+            font-weight: 400;
+            margin-left: 20px;
+        }
+
+        #newmoneytri {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 26px;
+            color: white;
+            line-height: 20px;
+            font-weight: 700;
+            margin-left: 20px;
+        }
+
+        #newlan {
+            height: 30px;
+            width: 100%;
+            background-color: #4A76BB;
+            margin-top: -16px;
+        }
+
+        #neweng {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: small;
+            color: white;
+            line-height: 20px;
+            font-weight: 400;
+            margin-left: 25px;
+            margin-top: 15px;
+        }
+
+        #newrazimg {
+            height: 30px;
+            width: 100%;
+            border: 1px solid black;
+            margin-top: -2px;
+            display: flex;
+            background-color: #F1F8FF;
+        }
+
+
+        #newraz1img {
+            height: 70%;
+            width: 10%;
+            margin-top: 10px;
+        }
+
+
+
+        #newcard1 {
+            display: flex;
+            margin-bottom: 5%;
+            width: 100%;
+            height: 40px;
+        }
+
+        #cardexp {
+            width: 30%;
+            height: 40px;
+            margin-left: 20px;
+        }
+
+        #cardnum {
+            height: 40px;
+            width: 55%;
+        }
+
+        #newrazrtrust {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #707274;
+            margin-left: 8px;
+            font-size: 14px;
+            margin-top: 7px;
+        }
+
+        #newmark {
+            color: black;
+        }
+
+        #newpreferdpay {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 300;
+            color: #6d6d6d;
+            margin-left: 20px;
+        }
+
+        #pay15 {
+            border: 1px solid black;
+            width: 100%;
+            height: 40px;
+            background-color: #4A76BB;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            color: white;
+            line-height: 30px;
+            font-weight: 700;
+        }
+
+
+        .modelcontainer {
+            background-color: rgba(0, 0, 0, 0);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            right: 0px;
+            height: 200px;
+            width: 100vh;
+            margin: auto;
+            opacity: 0;
+            pointer-events: none;
+            background-color: #fff;
+            margin-top: 15%;
+            box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+            border-radius: 25px;
+
+        }
+
+        .modelcontainer.show {
+            pointer-events: auto;
+            opacity: 1;
+        }
+
+        .modelcontainer>.model-container {
+            background-color: #fff;
+            box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+            border-radius: 15px;
+            padding: 15px 20px 15px 20px;
+            width: 600px;
+        }
+
+        #btn2 {
+            height: 600%;
+            width: 100%;
+            background-color: rgb(63, 68, 71);
+            color: white;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            font-family: "Lato", sans-serif;
+            border: 0.5px solid rgb(204, 195, 195);
+            margin-right: 15%;
+            padding: 15px;
+            border-radius: 15px;
+        }
+
+        #sucpay>img {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="newrazopay">
+        <div id="newrazopay1">
+            <h1 id="newyourtrip">Your upcoming Trip</h1>
+            <p id="newyourtrip1">This payment is for Tripoto's Mindful Retreats</p>
+            <h1 id="newmoneytri">₹15,200</h1>
+        </div>
+        <div id="newlan">
+            <p id="neweng">English <span><i class="fa-solid fa-angle-down"></i></span></p>
+        </div>
+        <div id="newrazimg">
+            <img id="newraz1img" src="https://cdn.razorpay.com/static/assets/trustedbadge/rtb-live.svg" alt="">
+            <p id="newrazrtrust">Razorpay Trusted Business</p>
+            <p id="newmark"><i class="fa-solid fa-circle-i"></i></p>
+        </div>
+
+        <p id="newpreferdpay">Add New Card</p>
+        <div id="newcard1">
+            <input id="cardnum" type="number" placeholder="Card Number">
+            <input id="cardexp" type="Number" placeholder="Expiry">
+        </div>
+        <div id="newcard1">
+            <input id="cardnum" type="text" placeholder="Card Holder's Name">
+            <input id="cardexp" type="Number" placeholder="CVV">
+        </div>
+        <button id="pay15" onclick="Paydone()">PAY</button>
+    </div>
+
+    <!--Success-->
+    <div id="nil" class="modelcontainer">
+        <div class="model-container1">
+            <div id="sucpay">
+                <img src="https://i.pinimg.com/originals/70/a5/52/70a552e8e955049c8587b2d7606cd6a6.gif" alt="">
+            </div>
+            <button id="btn2" onclick="removeClass()">Payment Done Succesfully</button>
+        </div>
+    </div>
+    <div id="nil1" class="modelcontainer">
+        <div class="model-container1">
+            <div id="sucpay">
+                <img src="https://c.tenor.com/pRVFLHUwS1gAAAAd/esmbot-chungus.gif" alt="">
+            </div>
+            <button id="btn2" onclick="removeClass1()">Payment processing</button>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+
+    function Paydone ()
+    {
+
+        let i = 0;
+        let id;
+        setInterval( () =>
+        {
+            if ( i === 0 )
+            {
+                var elem = document.getElementById( "nil1" );
+                elem.classList.add( "show" );
+
+                i++;
+            }
+            else
+            {
+                var elem = document.getElementById( "nil1" );
+                elem.classList.remove( "show" );
+                var elem = document.getElementById( "nil" );
+                elem.classList.add( "show" );
+            }
+
+
+        }, 5000 );
+
+    }
+    function removeClass ()
+    {
+
+        var elem = document.getElementById( "nil" );
+        elem.classList.remove( "show" );
+        window.location.href = "tripoto.html";
+
+
+
+    }
+</script>

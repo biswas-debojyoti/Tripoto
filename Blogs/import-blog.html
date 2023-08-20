@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="import-blog.css">
+    <title>Import Blog to Itinerary Converter</title>
+
+</head>
+
+<body>
+    <nav id="navbar">
+
+    </nav>
+    <main class="blog-container">
+        <div class="blog-content">
+
+            <h1 class="b-h1">UPLOAD YOUR BLOG ON TRIPOTO AND BE DISCOVERED BY MILLIONS OF TRAVELLERS</h1>
+            <h2 class="b-h2 h2-t">How it works</h2>
+            <h2 class="b-h2 h2-c">
+                <p>Submit the link of the story you want on Tripoto. This should not be the homepage of your blog, but a
+                    link to a specific
+                    story. For example:
+                    http://windsoftravel.com/destinations/india/himalachal-pradesh-motorcycle-stories/</p>
+                <p class="h2-c-p2">
+                    That's it! You're all done.
+                </p>
+            </h2>
+            <div>
+
+                <p class="b-d-p"><b>Note:</b>All content you submit will remain your own, and will be posted on social
+                    media under
+                    your
+                    name.</p>
+            </div>
+            <form action="">
+                <div class="b-form-in">
+                    <input type="text" placeholder="Enter your blog link" id="blog_link">
+                </div>
+                <input type="submit" id="b-submit" value="SUBMIT">
+            </form>
+            <div id="blog-loading"></div>
+            <!-- <div style="margin-top: 20px;color: rgb(4, 108, 168);display: flex;align-items: center;">
+                <img src="https://cdn.tripoto.com/210.0/img/blog_to_itinerary/loader.gif" alt="">
+                Submitting your blog to tripoto. Please wait...
+            </div> -->
+            <!-- Loading animation -->
+            <div class="b-d-2">
+                <br>
+                Once you hit ‘Submit’, you will be redirected to your imported blog. Feel free to use our formatting
+                tools to make your
+                story look even better!
+            </div>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+
+    const loadRedirect = async () =>
+    {
+        event.preventDefault();
+        document.querySelector( "#blog-loading" ).innerHTML = `<div style="margin-top: 20px;color: rgb(4, 108, 168);display: flex;align-items: center;">
+                <img src="https://cdn.tripoto.com/210.0/img/blog_to_itinerary/loader.gif" alt="">
+                Redirecting to your blog. Please wait...
+            </div>`;
+        setTimeout( () =>
+        {
+            document.querySelector( "#blog-loading" ).innerHTML = null;
+            window.location.href = `https://www.${ form.blog_link.value }`;
+        }, 4000 );
+    };
+
+    let form = document.querySelector( "form" );
+    form.addEventListener( "submit", () =>
+    {
+        event.preventDefault();
+        console.log( "Inside form EL" );
+        loadRedirect();
+
+    } )
+
+
+</script>
+<script type="module">
+    import { nav } from "../components/nav.js";
+    document.querySelector( "#navbar" ).innerHTML = nav()
+</script>
+
+</html>
+
+<!-- https://cdn.tripoto.com/210.0/img/blog_to_itinerary/mnt.png -->

@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/0c430de460.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./razorpay.css">
+    <title>Document</title>
+    <style>
+        #paymentdiv {
+            height: 800px;
+            width: 100%;
+            display: flex;
+            /*border: 1px solid red;*/
+            margin-bottom: 2%;
+        }
+
+        #firstdiv {
+            width: 68%;
+            /*border: 1px solid black;*/
+            height: 600px;
+        }
+
+        #seconddiv {
+            width: 28%;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            padding: 10px 12px;
+            box-sizing: border-box;
+            height: 650px;
+            margin-right: 8%;
+            border-radius: 5px;
+
+        }
+
+        .pridet {
+            font-size: 18px;
+            line-height: 19.8px;
+            color: rgb(51, 51, 51);
+            font-weight: 700;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #detaildiv {
+            width: 90%;
+            height: auto;
+            margin: auto;
+            /*border: 1px solid black;*/
+            margin-top: 13%;
+        }
+
+        .detail {
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 26.4px;
+            color: rgb(51, 51, 51);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .insidediv {
+            display: flex;
+            justify-content: space-between;
+            width: 62%;
+            /*border: 1px solid black;*/
+            margin-bottom: 2%;
+        }
+
+        .fname {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22.8751px;
+            color: rgb(145, 151, 163);
+
+        }
+
+        .fname1 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22.8751px;
+            color: rgb(145, 151, 163);
+            margin-right: 130px;
+        }
+
+        .fname2 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22.8751px;
+            color: rgb(145, 151, 163);
+            margin-right: 90px;
+        }
+
+        .fname3 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22.8751px;
+            color: rgb(145, 151, 163);
+            margin-right: 70px;
+        }
+
+        .fname4 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22.8751px;
+            color: rgb(145, 151, 163);
+            margin-right: 110px;
+        }
+
+        .fname5 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22.8751px;
+            color: rgb(145, 151, 163);
+            margin-right: 45px;
+        }
+
+        #mname {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22.8571px;
+            color: rgb(51, 51, 51);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #mnpl {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22.8571px;
+            color: rgb(51, 51, 51);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #memail {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22.8571px;
+            color: rgb(51, 51, 51);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #mcont {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22.8571px;
+            color: rgb(51, 51, 51);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #mdep {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22.8571px;
+            color: rgb(51, 51, 51);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #mchkin {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22.8571px;
+            color: rgb(51, 51, 51);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #img1>img {
+            width: 90%;
+            /*border: 1px solid black;*/
+            height: 150px;
+            margin-left: 5%;
+            margin-top: 2%;
+
+        }
+
+        #last {
+            width: 100%;
+            height: 100px;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 15px;
+            box-sizing: border-box;
+
+        }
+
+        #last>img {
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .tam {
+            height: 50px;
+            width: 100%;
+            /*border: 1px solid black;*/
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .Tam1 {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+            color: rgb(51, 51, 51);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #amt {
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 20px;
+            color: rgb(51, 51, 51);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .redm {
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 22.8571px;
+            color: rgb(51, 51, 51);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .coupon {
+            height: 80px;
+            width: 100%;
+            /*border: 1px solid black;*/
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .tredm {
+            height: 40px;
+            width: 100%;
+            border: 1px solid black;
+            border-style: dashed;
+            display: flex;
+            justify-content: space-between;
+            background-color: #F4FAFD;
+            margin-top: 3%;
+            margin-bottom: 6%;
+            padding: 5px 7px;
+            box-sizing: border-box;
+        }
+
+        .tredm1 {
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 20px;
+            color: rgb(47, 155, 219);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #tredm2 {
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 20px;
+            color: rgb(47, 155, 219);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .state {
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 10.5px;
+            color: rgb(145, 151, 163);
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 3%;
+        }
+
+        .state1 {
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 40px;
+            color: rgb(51, 51, 51);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #sopt {
+            height: 40px;
+            width: 100%;
+        }
+
+        #sopt:focus {
+            border: 1px solid lightskyblue;
+        }
+
+        .gst {
+            height: 60px;
+            width: 100%;
+            /*border: 1px solid black;*/
+            margin-top: 5%;
+            background-color: #F7F7F7;
+        }
+
+        .gsth1 {
+            font-size: 15px;
+            line-height: 20px;
+            font-weight: 700;
+            color: rgb(51, 51, 51);
+            font-family: Arial, Helvetica, sans-serif;
+            margin-bottom: -6%;
+            margin-left: 6%;
+            margin-top: -0%;
+
+        }
+
+        .gst1 {
+            font-size: 12px;
+            line-height: 17.1429px;
+            font-weight: 400;
+            color: rgb(51, 51, 51);
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            margin-top: 2%;
+
+        }
+
+        .term {
+            height: 50px;
+            width: 100%;
+            /*border: 1px solid black;*/
+            display: flex;
+        }
+
+        .pi {
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 400;
+            color: rgb(51, 51, 51);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .term1 {
+            font-size: 14px;
+            line-height: 20px;
+            color: rgb(47, 155, 219);
+            font-weight: 400;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #prced {
+            height: 60px;
+            width: 100%;
+            border: 1px solid #2F9BDB;
+
+            border-radius: 5px;
+            margin-top: 2%;
+            display: flex;
+            background-color: #2F9BDB;
+            padding: 10px 15px;
+            box-sizing: border-box;
+
+        }
+
+        .prced1 {
+            font-size: 18px;
+            line-height: 25.7143px;
+            font-weight: 700;
+            color: rgb(255, 255, 255);
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 8px;
+        }
+
+        #money {
+            font-size: 18px;
+            line-height: 25.7143px;
+            font-weight: 700;
+            color: rgb(255, 255, 255);
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 8px;
+        }
+
+        .arrow {
+            font-size: 18px;
+            line-height: 25.7143px;
+            font-weight: 700;
+            color: rgb(255, 255, 255);
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 50px;
+            margin-top: 8px;
+        }
+
+        .rs {
+            margin-left: 5px;
+            margin-right: 5px;
+            margin-top: 8px;
+            font-size: 18px;
+            line-height: 25.7143px;
+            font-weight: 700;
+            color: rgb(255, 255, 255);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #tax {
+            height: 30px;
+            width: 100%;
+            /*border: 1px solid black;*/
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 12px;
+            box-sizing: border-box;
+        }
+
+        #tax1 {
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 700;
+            color: rgb(51, 51, 51);
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: -5px;
+        }
+
+        #tax2 {
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 20px;
+            color: rgb(47, 155, 219);
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: -5px;
+        }
+
+        .modelcontainer {
+            background-color: rgba(0, 0, 0, 0);
+
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            right: 0px;
+            height: 600px;
+            width: 25%;
+            margin: auto;
+            opacity: 0;
+            pointer-events: none;
+            background-color: #fff;
+            box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+        }
+
+        .modelcontainer.show {
+            pointer-events: auto;
+            opacity: 1;
+        }
+
+        .modelcontainer>.model-container {
+            background-color: #fff;
+            box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+            border-radius: 15px;
+            padding: 15px 20px 15px 20px;
+            width: 600px;
+        }
+
+        #btn2 {
+            height: 600%;
+            width: 30%;
+            background-color: rgb(42, 123, 173);
+            color: white;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            font-family: "Lato", sans-serif;
+            border: 0.5px solid rgb(204, 195, 195);
+            margin-right: 15%;
+            padding: 15px;
+            border-radius: 15px;
+            margin-left: 65%;
+        }
+
+        .model-container>h1 {
+            font-family: "Lato", sans-serif;
+        }
+
+        .model-container>p {
+            font-family: "Lato", sans-serif;
+        }
+
+        .model-container>#close {
+            font-family: "Lato", sans-serif;
+            justify-content: center;
+        }
+
+        #triponame {
+            border: 1px solid black;
+            height: 50px;
+            width: 100%;
+            margin-bottom: 150%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="paymentdiv">
+
+        <div id="firstdiv">
+
+            <div id="detaildiv">
+                <hr>
+                <h1 class="detail">Details Provided</h1>
+                <div class="insidediv">
+                    <div id="fname">
+                        <h1 class="fname">Full Name</h1>
+                        <h1 id="mname"></h1>
+                    </div>
+                    <div id="fname">
+                        <h1 class="fname1">Email</h1>
+                        <h1 id="memail"></h1>
+                    </div>
+
+                </div>
+                <div class="insidediv">
+                    <div id="fname">
+                        <h1 class="fname">Contact</h1>
+                        <h1 id="mcont"></h1>
+                    </div>
+                    <div id="fname">
+                        <h1 class="fname2">Destination</h1>
+                        <h1 id="mdesti"></h1>
+                    </div>
+
+                </div>
+                <div class="insidediv">
+                    <div id="fname">
+                        <h1 class="fname">Departure City</h1>
+                        <h1 id="mdep"></h1>
+                    </div>
+                    <div id="fname">
+                        <h1 class="fname3">Check-In Date</h1>
+                        <h1 id="mchkin"> </h1>
+                    </div>
+
+                </div>
+                <div class="insidediv">
+                    <div id="fname">
+                        <h1 class="fname">Check-Out Date</h1>
+                        <h1 id="mchkout"></h1>
+                    </div>
+                    <div id="fname">
+                        <h1 class="fname4">Duration</h1>
+                        <h1 id="mdura"></h1>
+                    </div>
+
+                </div>
+                <div class="insidediv">
+                    <div id="fname">
+                        <h1 class="fname">Room Type</h1>
+                        <h1 id="mrmtp"></h1>
+                    </div>
+                    <div id="fname">
+                        <h1 class="fname5">Number of People</h1>
+                        <h1 id="mnpl"></h1>
+                    </div>
+
+                </div>
+                <div class="insidediv">
+                    <div id="fname">
+                        <h1 class="fname">Amount</h1>
+                        <h1 id="mamnt"></h1>
+                    </div>
+
+                </div>
+
+                <hr>
+
+
+
+
+            </div>
+
+            <div id="img1">
+                <img src="https://cdn1.tripoto.com/assets/2.9/img/newBannerPaymentLinkPage.png" alt="">
+            </div>
+        </div>
+        <div id="seconddiv">
+            <h1 class="pridet">Price Details</h1>
+            <div class="tam">
+                <h1 class="Tam1">Total Amount</h1>
+                <h1 id="amt">15000</h1>
+            </div>
+            <hr>
+            <h1 class="redm">Redemption</h1>
+
+
+            <div class="tredm">
+                <h1 class="tredm1">Total Redemption</h1>
+                <h1 id="tredm2">₹ 100</h1>
+            </div>
+            <hr>
+            <div id="tax">
+                <h1 id="tax1">TAX</h1>
+                <h1 id="tax2">+₹745</h1>
+            </div>
+            <hr>
+            <h1 class="state">State Of Residency</h1>
+            <select name="" id="sopt">
+                <option value="" class="state1">State Of Residency</option>
+                <option value="">Andaman And Nikobar Islabds</option>
+                <option value="">Andhra Pradesh</option>
+                <option value="">Arunachal Pradesh</option>
+                <option value="">Assam</option>
+                <option value="">Bihar</option>
+                <option value=""> Chhattisgarh</option>
+                <option value="">Goa</option>
+                <option value=""> Gujarat</option>
+                <option value="">Himachal Pradesh</option>
+                <option value="">Jammu and Kashmir</option>
+                <option value="">Jharkhand</option>
+                <option value="">Karnataka</option>
+                <option value="">Kerala</option>
+                <option value="">Madhya Pradesh</option>
+                <option value="">Maharashtra</option>
+                <option value="">Manipur</option>
+                <option value="">Meghalaya</option>
+                <option value="">Mizoram</option>
+                <option value="">Nagaland</option>
+                <option value=""> Odisha</option>
+                <option value=""> Punjab</option>
+                <option value="">Rajasthan</option>
+                <option value="">Sikkim</option>
+                <option value="">Tamil Nadu</option>
+                <option value="">Telangana</option>
+                <option value="">Tripura</option>
+                <option value="">Uttar Pradesh</option>
+            </select>
+
+            <div class="gst">
+                <h1 class="gsth1">Claim GST</h1>
+                <div class="gst1">
+                    <input type="checkbox" name="" id="">
+                    <p>Add your GST number for tax claim purposes <br> (optional)</p>
+                </div>
+
+                <div class="term">
+                    <input type="checkbox" name="" id="chkbx">
+                    <p class="pi">I accept tripot's <span> <a href="" class="term1">Terms and conditions</a></span></p>
+                </div>
+                <button id="prced" onclick="money()"> <span class="prced1"> Proceed To Pay </span><span
+                        class="rs">₹</span> <span id="money">15,200</span> <span class="arrow"><i
+                            class="fa-solid fa-right-long"></i></span></button>
+            </div>
+        </div>
+
+    </div>
+    <hr>
+    <div id="last">
+        <div><img src="https://cdn1.tripoto.com/assets/2.9/img/logo/header-blue.svg" alt=""></div>
+        <div><img src="https://cdn1.tripoto.com/assets/2.9/img/logo/download-android-app.svg" alt=""></div>
+    </div>
+    <!--payment razor start-->
+    <div id="nil" class="modelcontainer">
+        <div id="razopay1">
+            <h1 id="yourtrip">Your upcoming Trip</h1>
+            <p id="yourtrip1">This payment is for Tripoto's Mindful Retreats</p>
+            <h1 id="moneytri">₹15,200</h1>
+        </div>
+        <div id="lan">
+            <p id="eng">English <span><i class="fa-solid fa-angle-down"></i></span></p>
+        </div>
+        <div id="razimg">
+            <img id="raz1img" src="https://cdn.razorpay.com/static/assets/trustedbadge/rtb-live.svg" alt="">
+            <p id="razrtrust">Razorpay Trusted Business</p>
+            <p id="mark"><i class="fa-solid fa-circle-i"></i></p>
+        </div>
+
+        <p id="preferdpay">PREFERRED PAYMENT METHODS</p>
+        <div id="gpay1">
+            <img id="gpay" src="https://cdn.razorpay.com/app/googlepay.svg" alt="">
+            <h1 id="upig">UPI-Google Pay</h1>
+            <p id="arrow"><i class="fa-solid fa-angle-right"></i></p>
+        </div>
+        <div id="gpay1">
+            <img id="gpay" src="https://cdn.razorpay.com/checkout/phonepe.png" alt="">
+            <h1 id="upig">UPI-Google Pay</h1>
+            <p id="arrow"><i class="fa-solid fa-angle-right"></i></p>
+        </div>
+        <p id="preferdpay">CARDS, UPI & MORE</p>
+        <button id="gpay1" onclick="removeClass()">
+            <p id="arrow1"><i class="fa-brands fa-cc-visa"></i></p>
+            <h1 id="card1">Card</h1>
+        </button>
+
+
+
+        <div id="gpay1">
+            <img id="gpay3"
+                src="https://adverta.io/assets/logo-dd904db7a703bcf000a9e6cfeedc8c0fdd0b772ecd9cb166bc579e3b59b540d1.png"
+                alt="">
+            <h1 id="upig13">UPI/QR</h1>
+        </div>
+        <div id="gpay1">
+            <p id="arrow1"><i class="fa-solid fa-building-columns"></i></p>
+            <h1 id="card1">Net-Banking</h1>
+
+        </div>
+        <div id="gpay1">
+            <p id="arrow1"><i class="fa-solid fa-wallet"></i></p>
+            <h1 id="card1">Wallet</h1>
+        </div>
+
+    </div>
+    <!--Payment-razor ends-->
+</body>
+
+</html>
+<script>
+    function money ()
+    {
+        var elem = document.getElementById( "nil" );
+        elem.classList.add( "show" );
+    }
+
+    var arry = JSON.parse( localStorage.getItem( "userdata" ) );
+    console.log( arry );
+    arry.map( function ( el, i )
+    {
+        var name = document.getElementById( "mname" );
+        name.innerText = el.name;
+        var email = document.getElementById( "memail" );
+        email.innerText = el.email;
+        var cont = document.getElementById( "mcont" );
+        cont.innerText = el.number;
+        var dep = document.getElementById( "mdep" );
+        dep.innerText = el.city;
+        var chekin = document.getElementById( "mchkin" );
+        chekin.innerText = el.date;
+        var nppl = document.getElementById( "mnpl" );
+        nppl.innerText = el.booknum;
+
+    } );
+
+
+    function removeClass ()
+    {
+
+        var elem = document.getElementById( "nil" );
+        elem.classList.remove( "show" );
+        window.location.href = "../detail-page/razor.html";
+
+    }
+</script>

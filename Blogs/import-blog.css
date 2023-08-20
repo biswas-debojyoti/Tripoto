@@ -1,0 +1,94 @@
+:root {
+	--font-hel: Helvetica, sans-serif;
+	--font-col: rgb(80 96 102);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.blog-container {
+	margin-top: 10vh;
+	background: url("https://cdn.tripoto.com/210.0/img/blog_to_itinerary/mnt.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position-x: right;
+	width: 85vw;
+	height: 80vh;
+	padding: 2rem;
+}
+
+.blog-content {
+	margin-top: -1em;
+	width: 50%;
+	font-family: var(--font-hel);
+}
+
+.b-h1 {
+	font-size: 36px;
+	font-weight: 400;
+	line-height: 46px;
+}
+
+.h2-t {
+	line-height: 40px;
+	margin: 10px 0;
+	font-size: 28px;
+	color: var(--font-col);
+}
+
+.h2-c {
+	font-weight: 400;
+	text-align: justify;
+	font-size: 17.5px;
+	line-height: 20px;
+	color: var(--font-col);
+}
+
+.h2-c-p2 {
+	font-weight: 600;
+	margin: 10px 0;
+}
+
+.b-d-p {
+	line-height: 20px;
+	font-size: 14px;
+	color: var(--font-col);
+}
+
+.b-form-in {
+	border-bottom: 1px solid black;
+	width: 100%;
+	padding-left: 40px;
+	margin-top: 10px;
+}
+
+#blog_link {
+	width: 100%;
+	margin: 10px 0;
+	border: none;
+	font-size: 18px;
+	color: rgb(76 76 76);
+	line-height: 20px;
+	outline: none;
+}
+
+#b-submit {
+	margin-top: 25px;
+	background-color: rgb(23 71 99);
+	border: 4px solid rgb(115 203 255);
+	color: white;
+	padding: 5px 50px;
+	border-radius: 30px;
+	font-size: 24px;
+	line-height: 20px;
+}
+
+.b-d-2 {
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 20px;
+	color: rgb(80 96 102);
+	margin: 30px 0;
+}
